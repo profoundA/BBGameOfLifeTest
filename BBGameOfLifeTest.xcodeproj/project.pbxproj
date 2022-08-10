@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		3231AB8828A27F0900C828EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231AB8728A27F0900C828EA /* AppDelegate.swift */; };
 		3231AB8A28A27F0900C828EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231AB8928A27F0900C828EA /* SceneDelegate.swift */; };
-		3231AB8C28A27F0900C828EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231AB8B28A27F0900C828EA /* ViewController.swift */; };
-		3231AB8F28A27F0900C828EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231AB8D28A27F0900C828EA /* Main.storyboard */; };
 		3231AB9128A27F0A00C828EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3231AB9028A27F0A00C828EA /* Assets.xcassets */; };
 		3231AB9428A27F0A00C828EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231AB9228A27F0A00C828EA /* LaunchScreen.storyboard */; };
+		3231AB9C28A27F5800C828EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231AB9B28A27F5800C828EA /* MainViewController.swift */; };
+		3231ABA128A2869400C828EA /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231ABA028A2869400C828EA /* WorldView.swift */; };
+		32A17D6A28A299B00006EBEA /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A17D6928A299B00006EBEA /* CellView.swift */; };
+		32A17D6C28A29E2A0006EBEA /* WorldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A17D6B28A29E2A0006EBEA /* WorldModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3231AB8428A27F0900C828EA /* BBGameOfLifeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBGameOfLifeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3231AB8728A27F0900C828EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3231AB8928A27F0900C828EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3231AB8B28A27F0900C828EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3231AB8E28A27F0900C828EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3231AB9028A27F0A00C828EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3231AB9328A27F0A00C828EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3231AB9528A27F0A00C828EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3231AB9B28A27F5800C828EA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3231ABA028A2869400C828EA /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		32A17D6928A299B00006EBEA /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		32A17D6B28A29E2A0006EBEA /* WorldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		3231AB8628A27F0900C828EA /* BBGameOfLifeTest */ = {
 			isa = PBXGroup;
 			children = (
+				3231AB9D28A27F9000C828EA /* Application */,
+				3231AB9B28A27F5800C828EA /* MainViewController.swift */,
+				3231ABA228A287AC00C828EA /* Model */,
+				3231ABA628A2886700C828EA /* Views */,
+				3231ABA528A2885000C828EA /* Supporting Files */,
+			);
+			path = BBGameOfLifeTest;
+			sourceTree = "<group>";
+		};
+		3231AB9D28A27F9000C828EA /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				3231AB8728A27F0900C828EA /* AppDelegate.swift */,
 				3231AB8928A27F0900C828EA /* SceneDelegate.swift */,
-				3231AB8B28A27F0900C828EA /* ViewController.swift */,
-				3231AB8D28A27F0900C828EA /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3231ABA228A287AC00C828EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32A17D6B28A29E2A0006EBEA /* WorldModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3231ABA528A2885000C828EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				3231AB9028A27F0A00C828EA /* Assets.xcassets */,
 				3231AB9228A27F0A00C828EA /* LaunchScreen.storyboard */,
 				3231AB9528A27F0A00C828EA /* Info.plist */,
 			);
-			path = BBGameOfLifeTest;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3231ABA628A2886700C828EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3231ABA028A2869400C828EA /* WorldView.swift */,
+				32A17D6928A299B00006EBEA /* CellView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +165,6 @@
 			files = (
 				3231AB9428A27F0A00C828EA /* LaunchScreen.storyboard in Resources */,
 				3231AB9128A27F0A00C828EA /* Assets.xcassets in Resources */,
-				3231AB8F28A27F0900C828EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +175,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3231AB8C28A27F0900C828EA /* ViewController.swift in Sources */,
+				3231AB9C28A27F5800C828EA /* MainViewController.swift in Sources */,
+				32A17D6C28A29E2A0006EBEA /* WorldModel.swift in Sources */,
+				3231ABA128A2869400C828EA /* WorldView.swift in Sources */,
 				3231AB8828A27F0900C828EA /* AppDelegate.swift in Sources */,
 				3231AB8A28A27F0900C828EA /* SceneDelegate.swift in Sources */,
+				32A17D6A28A299B00006EBEA /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3231AB8D28A27F0900C828EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3231AB8E28A27F0900C828EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3231AB9228A27F0A00C828EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +321,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 35Z5R84P59;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BBGameOfLifeTest/Info.plist;
+				INFOPLIST_FILE = "BBGameOfLifeTest/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +337,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +350,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 35Z5R84P59;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BBGameOfLifeTest/Info.plist;
+				INFOPLIST_FILE = "BBGameOfLifeTest/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +366,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
